@@ -1,0 +1,93 @@
+{
+	"description" : "A clock wallpaper designed to look like code.\nSource: https://github.com/bizojs/code-clock-wallpaper",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"backgroundimage" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Background Image",
+				"type" : "bool",
+				"value" : true
+			},
+			"theme" : 
+			{
+				"index" : 1,
+				"options" : 
+				[
+					{
+						"label" : "Blueberry",
+						"value" : "theme-blueberry"
+					},
+					{
+						"label" : "Monokai Pro",
+						"value" : "theme-monokai-pro"
+					},
+					{
+						"label" : "One Dark Pro",
+						"value" : "theme-one-dark"
+					},
+					{
+						"label" : "GitHub Dark",
+						"value" : "theme-github-dark"
+					}
+				],
+				"order" : 101,
+				"text" : "Syntax Theme",
+				"type" : "combo",
+				"value" : "theme-blueberry"
+			},
+			"buttonposition" : 
+			{
+				"index" : 2,
+				"options" : 
+				[
+					{
+						"label" : "Top Right",
+						"value" : "top-right"
+					},
+					{
+						"label" : "Top Left",
+						"value" : "top-left"
+					},
+					{
+						"label" : "Bottom Right",
+						"value" : "bottom-right"
+					},
+					{
+						"label" : "Bottom Left",
+						"value" : "bottom-left"
+					},
+					{
+						"label" : "Top Center",
+						"value" : "top-center"
+					},
+					{
+						"label" : "Bottom Center",
+						"value" : "bottom-center"
+					},
+					{
+						"label" : "Left Center",
+						"value" : "left-center"
+					},
+					{
+						"label" : "Right Center",
+						"value" : "right-center"
+					}
+				],
+				"order" : 102,
+				"text" : "Hide Button Position",
+				"type" : "combo",
+				"value" : "top-right"
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Clock", "Code", "Coding", "Time" ],
+	"title" : "Code Clock",
+	"type" : "web",
+	"version" : 0
+}

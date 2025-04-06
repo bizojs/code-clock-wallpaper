@@ -1,0 +1,1 @@
+<span class="text-quote transition-colors duration-700">"</span>
