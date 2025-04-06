@@ -3,7 +3,7 @@
 A custom wallpaper clock made to look like code for Wallpaper Engine.
 Built using [Svelte](https://svelte.dev/) and [Vite](https://vite.dev/).
 
-![preview](/public/preview.png)
+![preview](/public/preview.gif)
 
 ## Project Setup
 

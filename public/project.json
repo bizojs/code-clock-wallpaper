@@ -85,7 +85,7 @@
 			}
 		}
 	},
-	"preview" : "preview.png",
+	"preview" : "preview.gif",
 	"tags" : [ "Clock", "Code", "Coding", "Time" ],
 	"title" : "Code Clock",
 	"type" : "web",
