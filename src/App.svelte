@@ -5,27 +5,35 @@
     import { DateHandler } from "$lib/DateHandler"
 	import { fade, fly } from "svelte/transition"
 	import { cubicInOut } from "svelte/easing"
-	import { onMount } from "svelte"
-	import { cn } from "$lib/utils"
+	import { cn, handleRgb } from "$lib/utils"
 
     let data = $state(DateHandler.generate())
     let hidden: boolean = $state(false)
     let interval: ReturnType<typeof setInterval> | undefined = $state(undefined)
+        
+    const intervalStore = usePropertyStore("clockrefreshinterval")
     const backgroundImage = usePropertyStore("backgroundimage")
+    const backgroundColor = usePropertyStore("schemecolor")
     const theme = usePropertyStore("theme")
 
-    onMount(() => {
+    $effect(() => {
+
+        const root = document.documentElement
+        const sRGB = handleRgb($backgroundColor?.value ?? "0.14 0.16 0.22")
+        root.style.setProperty("--background", sRGB)
+
         interval = setInterval(() => {
             data = DateHandler.generate()
-        }, 1000)
+        }, $intervalStore?.value ?? 1000)
 
         return () => clearInterval(interval)
+
     })
 </script>
 
 <div class="flex w-screen h-screen relative">
     <ToggleButton bind:hidden />
-    {#if $backgroundImage?.value ?? false}
+    {#if $backgroundImage?.value ?? true}
         <img
             transition:fade
             src="wallpaper.jpg"

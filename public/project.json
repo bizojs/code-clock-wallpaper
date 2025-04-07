@@ -16,7 +16,8 @@
 			},
 			"buttonposition" : 
 			{
-				"index" : 2,
+				"condition" : "showbuttons.value == true",
+				"index" : 3,
 				"options" : 
 				[
 					{
@@ -52,17 +53,36 @@
 						"value" : "right-center"
 					}
 				],
-				"order" : 102,
-				"text" : "Hide Button Position",
+				"order" : 103,
+				"text" : "Button Position",
 				"type" : "combo",
 				"value" : "top-right"
+			},
+			"clockrefreshinterval" : 
+			{
+				"fraction" : false,
+				"index" : 4,
+				"max" : 1000,
+				"min" : 100,
+				"order" : 104,
+				"text" : "Clock Refresh Interval",
+				"type" : "slider",
+				"value" : 1000
 			},
 			"schemecolor" : 
 			{
 				"order" : 0,
-				"text" : "Scheme Color",
+				"text" : "Background Color",
 				"type" : "color",
-				"value" : "0 0 0"
+				"value" : "0.14 0.16 0.22"
+			},
+			"showbuttons" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Show Buttons",
+				"type" : "bool",
+				"value" : true
 			},
 			"theme" : 
 			{
@@ -102,6 +122,7 @@
 	"title" : "Code Clock",
 	"type" : "web",
 	"version" : 1,
+	"visibility" : "public",
 	"workshopid" : "3459382123",
 	"workshopurl" : "steam://url/CommunityFilePage/3459382123"
 }
